@@ -1,0 +1,55 @@
+name: CPython 3.6 Standard Library part 2
+body: |-
+  |indent
+    *  w                      
+    b  e                      
+  de**m*l                     
+       k                      
+       *    i                 
+       *  * t                 
+     _****ur*__               
+          i r                 
+          d t                 
+           **cket             
+        f   o                 
+        u   ****ing       o   
+     war*****             p   
+        c                 * s 
+       s*at               r q 
+        o            c    a * 
+        o h s    t  con****l*b
+   sh**** a t    y t d e  * * 
+        *ys *e zip**** m  r * 
+          h *    e m c *    3 
+       co**e**ions * s f   j  
+          i t o        i   s  
+    pa**lib           p***form
+                       e   n  
+solution: |-
+  |indent
+    a  w                      
+    b  e                      
+  decimal                     
+       k                      
+       r    i                 
+       e  u t                 
+     __future__               
+          i r                 
+          d t                 
+           socket             
+        f   o                 
+        u   logging       o   
+     warnings             p   
+        c                 e s 
+       stat               r q 
+        o            c    a l 
+        o h s    t  contextlib
+   shutil a t    y t d e  o t 
+        sys re zipfile m  r e 
+          h u    e m c p    3 
+       collections e s f   j  
+          i t o        i   s  
+    pathlib           platform
+                       e   n  
+score: 50.0
+description: Not all of standard library modules seem to get enough love

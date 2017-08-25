@@ -1,0 +1,8 @@
+{% extends "layout.html" %}
+{% block content %}
+    {% if contest.rules %}
+        <div class="body-content">
+            {{ markdown(contest.rules) }}
+        </div>
+    {% endif %}
+{% endblock %}

@@ -1,0 +1,84 @@
+name: Naming is hard
+body: |-
+  |indent
+          l                           
+        y x   j                       
+        a m d s                       
+      s*****js*n                      
+        l   a n                       
+         bso*  s       m              
+            g  *o      o              
+        netwo***       c              
+          o        s   *              
+         **id*s    q   r              
+          *     f  * a***bic          
+        p a     l  a   d      f  s    
+      *uard*an m*tp*****b     l  e    
+     p  t o b   *  c   s     bab**    
+    s*s h   *lick  h       t  s  *    
+     t  *         ****frame**rk  n    
+  d*t*util         m       i  _  i    
+     s  *         p***ngo  *  **q*ests
+   yw*               s     * r*  m    
+                           e  s       
+                           d  *ime    
+                              f       
+                            ps**il    
+                              l       
+solution: |-
+  |indent
+          l                           
+        y x   j                       
+        a m d s                       
+      simplejson                      
+        l   a n                       
+         bson  s       m              
+            g  io      o              
+        networkx       c              
+          o        s   k              
+         gridfs    q   r              
+          n     f  l alembic          
+        p a     l  a   d      f  s    
+      guardian matplotlib     l  e    
+     p  t o b   s  c   s     babel    
+    sys h   click  h       t  s  e    
+     t  l         restframework  n    
+  dateutil         m       i  _  i    
+     s  b         pymongo  s  requests
+   ywt               s     t re  m    
+                           e  s       
+                           d  time    
+                              f       
+                            psutil    
+                              l       
+score: 125.0
+description: |-
+  Sometimes names can be little bit confusing
+
+  **requirements.txt**
+
+      alembic
+      Babel
+      click
+      Django
+      django-guardian
+      djangorestframework
+      flask
+      flask-restful
+      lxml
+      matplotlib
+      mockredispy
+      networkx
+      psutil
+      PyJWT
+      pymongo
+      pytest
+      python-dateutil
+      PyYAML
+      requests
+      selenium
+      simplejson
+      six
+      SQLAlchemy
+      tornado
+      Twisted

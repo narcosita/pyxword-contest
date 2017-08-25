@@ -1,0 +1,29 @@
+name: Modules that have different name than the package they came from
+description: |
+  Some modules have just shorter name, like
+  * djangorestframework -> restframework
+  * python-dateutil -> dateutil
+
+  Some even contain multiple top level modules:
+  * pymongo -> bson, pymongo, gridfs
+
+glossary: |
+  bson
+  dateutil
+  flask_restful
+  gridfs
+  guardian
+  mockredis
+  pymongo
+  restframework
+  yaml
+  ywt
+requirements.txt: |
+  django-guardian
+  djangorestframework
+  flask-restful
+  mockredispy
+  PyJWT
+  pymongo
+  python-dateutil
+  PyYAML

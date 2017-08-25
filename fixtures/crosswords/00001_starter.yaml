@@ -1,0 +1,33 @@
+name: Starter
+body: |-
+  |indent
+                 c  r 
+                s**ket
+       d         l    
+       a       s *    
+       * t     u e    
+       e h***lib *sv  
+       * r y   p t    
+  t*mp**l* s w***ings 
+    a  m a     o o    
+    *  e *  j  c n    
+    h    * o*  e s    
+         n  o  s      
+       l***ing s      
+solution: |-
+  |indent
+                 c  r 
+                socket
+       d         l    
+       a       s l    
+       t t     u e    
+       e hashlib csv  
+       t r y   p t    
+  tempfile s warnings 
+    a  m a     o o    
+    t  e d  j  c n    
+    h    i os  e s    
+         n  o  s      
+       logging s      
+score: 25.0
+description: CPython 3.6 has so many fun modules in standard library!

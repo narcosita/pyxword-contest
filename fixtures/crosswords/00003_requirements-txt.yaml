@@ -1,0 +1,92 @@
+name: requirements.txt
+body: |-
+  |indent
+                               w    
+                             f**s*  
+                               r  d 
+                               n  * 
+                             u**d a 
+                         j  a  n  * 
+                         s  **ggin* 
+                       c o  e  s  *s
+                     sel*****       
+                       i    b       
+                       c   t**e     
+                 n*two***   c       
+                   w  e             
+         s     r   *o               
+         i  ba**l  *                
+       lx*l    q   t                
+         p  __f*****__              
+         l     e   *  t             
+     co*****ion*  p   y             
+         j     t  l   * s           
+         * p   ***al**em*           
+   itert****      t o s s           
+         n u      * n               
+           *      o *****do         
+           * a    * e               
+    ma**l*t*i*    m x               
+       a     c      t               
+  pyt***            l               
+       h           s*x              
+       l            b               
+       i                            
+       b                            
+solution: |-
+  |indent
+                               w    
+                             flask  
+                               r  d 
+                               n  j 
+                             uuid a 
+                         j  a  n  n 
+                         s  logging 
+                       c o  e  s  os
+                     selenium       
+                       i    b       
+                       c   time     
+                 networkx   c       
+                   w  e             
+         s     r   io               
+         i  babel  s                
+       lxml    q   t                
+         p  __future__              
+         l     e   d  t             
+     collections  p   y             
+         j     t  l   p s           
+         s p   sqlalchemy           
+   itertools      t o s s           
+         n u      f n               
+           t      o tornado         
+           i a    r e               
+    matplotlib    m x               
+       a     c      t               
+  pytest            l               
+       h           six              
+       l            b               
+       i                            
+       b                            
+score: 100.0
+description: |-
+  We are of course not limited online to the builtin libraries.
+
+  **requirements.txt**
+
+      alembic
+      Babel
+      click
+      Django
+      flask
+      lxml
+      matplotlib
+      networkx
+      psutil
+      pytest
+      requests
+      selenium
+      simplejson
+      six
+      SQLAlchemy
+      tornado
+      Twisted

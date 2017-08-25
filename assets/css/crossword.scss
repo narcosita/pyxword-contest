@@ -1,0 +1,26 @@
+
+#crossword {
+  font-family: monospace, sans-serif;
+  font-size: 12px;
+  overflow-x: auto;
+  padding: 5px;
+
+  table {
+    margin: 0 auto;
+    text-align: center;
+
+    td {
+      height: 14px;
+      width: 14px;
+
+      &.ltr {
+        border: 1px solid #000;
+        background-color: #eee;
+
+        &.edit {
+          background-color: transparentize(#299C94, 0.6);
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,33 @@
+{% extends "layout.html" %}
+{% block content %}
+    <!-- Main jumbotron for a primary marketing message or call to action -->
+    <div class="jumbotron">
+        {% if contest %}
+            {% if contest.description %}
+                {{ markdown(contest.description) }}
+            {% else %}
+            <h1>Python Crossword</h1>
+
+            <p>
+                No doubt you know countless Python modules that helped you in big and small projects alike.
+                Fill in the gaps in names of popular Python packages to complete the crossword.
+            </p>
+            <p>
+                Don't worry, this is not a memory game and you probably could
+                help yourself with a script or two here too.
+            </p>
+            {% endif %}
+            <div class="clearfix">
+                <a href="{{ url_for('contest.challenge', contest_slug=contest.slug) }}" class="btn btn-primary btn-lg pull-right">
+                    Get started now &raquo;
+                </a>
+            </div>
+        {% else %}
+            <h2 class="center">Contest not yet started</h2>
+        {% endif %}
+    </div><!-- /.jumbotron -->
+
+    <div class="body-content">
+    </div>
+{% endblock %}
+

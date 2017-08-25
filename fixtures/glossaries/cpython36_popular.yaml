@@ -1,0 +1,33 @@
+name: Popular CPython 3.6 Standard Library modules
+description: |
+  Popular, as in, the most recognized.
+  I couldn't find a decent list of such, so I made it up.
+glossary: |
+  __future__
+  codecs
+  collections
+  contextlib
+  csv
+  datetime
+  decimal
+  difflib
+  functools
+  hashlib
+  io
+  itertools
+  json
+  logging
+  operator
+  os
+  pathlib
+  re
+  shutil
+  socket
+  sqlite3
+  sys
+  tempfile
+  time
+  types
+  uuid
+  warnings
+  zipfile

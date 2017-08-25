@@ -1,0 +1,17 @@
+
+{% extends "layout.html" %}
+
+{% block page_title %}Unauthorized{% endblock %}
+
+{% block content %}
+<div class="jumbotron">
+    <div class="text-center">
+        <h1>Authorization required</h1>
+        <p>
+            Please <a href="{{ url_for('public.login', next=request.path) }}">log in</a> or
+            <a href="{{ url_for('public.register') }}">create a new account</a>.
+        </p>
+    </div>
+</div>
+{% endblock %}
+

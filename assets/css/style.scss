@@ -1,0 +1,381 @@
+html {
+  font-family: Lato, sans-serif;
+}
+
+body {
+  background: url('../img/fly-hero.png') no-repeat 10px 140px,
+  url('../img/stxnext_python_crossword.png') no-repeat calc(100% - 10px) bottom,
+  url('../img/white-bg-texture.png') repeat;
+  height: 84vh;
+}
+
+h1, h2, h3, h4, h5 {
+  color: #207973;
+}
+
+h1 {
+  margin: 30px auto;
+  font-size: 32px;
+}
+
+h2 {
+  font-size: 20px;
+}
+
+h3 {
+  font-size: 16px;
+}
+
+h5 {
+  font-size: 14px;
+  font-weight: normal;
+}
+
+nav {
+  padding: 14px 0 14px 190px;
+  display: block;
+  width: 100%;
+  background: url('../img/header-image-logo.png') no-repeat 10px center,
+  linear-gradient(to bottom, #207973, #299C94);
+  box-shadow: 0 0 25px 4px #194E4B;
+
+  .navbar-nav {
+    float: left;
+    margin: 0;
+  }
+
+  a {
+    text-decoration: none;
+    color: white;
+  }
+
+  .btn-like {
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 8px;
+  }
+
+  .nav li {
+    a:hover, a:focus {
+      color: #FBE93C;
+      background-color: transparent;
+    }
+    float: left;
+  }
+
+  li + li {
+    margin-left: 5px;
+  }
+
+  ul {
+    margin: 0;
+  }
+
+  ul.navbar-right {
+    margin-left: 5px;
+  }
+
+  .links {
+    margin: 18px 0 20px 200px;
+  }
+}
+
+footer {
+  font-size: 14px;
+  text-align: center;
+  width: 100%;
+  color: #555;
+}
+
+footer a {
+  color: #222;
+}
+
+section.content {
+  margin: 0 0 170px 210px;
+  max-width: 1024px;
+  min-height: 77vh;
+}
+
+.next a {
+  display: inline-block;
+  margin: 50px 0;
+  font-size: 20px;
+  font-variant: small-caps;
+  text-decoration: none;
+  color: #207973;
+}
+
+.console {
+  margin: 35px auto 20px;
+  padding: 0 0 10px;
+  overflow: hidden;
+  background-color: rgba(0, 0, 0, 0.9);
+  border: 6px solid #888;
+  border-radius: 6px;
+  box-shadow: 0 0 25px 4px #888;
+  width: 800px;
+  min-height: 200px;
+  clear: both;
+}
+
+.console header {
+  margin-bottom: 10px;
+  padding: 6px 0 4px;
+  background: linear-gradient(to bottom, #444, #222);
+  text-align: center;
+  color: #aaa;
+}
+
+.console article {
+  padding: 15px;
+}
+
+.console pre {
+  padding: 2px 0 2px 10px;
+  font-family: "Lucida Console", Monaco, monospace;
+  font-size: 14px;
+  color: #017D01;
+}
+
+.console input[type='text'] {
+  margin: 0;
+  padding: 2px 4px;
+  height: 18px;
+  background-color: #465047;
+  border: none;
+  border-radius: 5px;
+  outline: none;
+  font: 12px "Lucida Console", Monaco, monospace;
+  color: white;
+
+}
+
+.flash-message {
+  margin: 15px auto;
+  padding: 10px;
+  max-width: 800px;
+  list-style-type: none;
+  text-shadow: 0 0 4px #FFFFFF;
+}
+
+.flash-message.error {
+  background-color: rgba(255, 0, 0, 0.4);
+  color: #770000;
+}
+
+.flash-message.info {
+  background-color: rgba(255, 255, 0, 0.4);
+  color: #777700;
+}
+
+.flash-message.success {
+  background-color: rgba(0, 255, 0, 0.4);
+  color: #007700;
+}
+
+.center {
+  text-align: center;
+}
+
+.task-time {
+  margin: 30px auto 0;
+}
+
+.button-line {
+  margin: 30px auto 0;
+}
+
+input[type='submit'] {
+  padding: 10px 20px;
+  background-color: #299C94;
+  border: 1px solid #207973;
+  border-radius: 15px;
+  outline: none;
+  font-size: 20px;
+  font-variant: small-caps;
+  color: white;
+}
+
+.top-score {
+  font-size: 18px;
+  margin: 10px auto;
+  text-align: center;
+
+  color: #878787;
+
+  strong {
+    color: black;
+  }
+}
+
+table tr th a {
+  color: #194E4B;
+}
+
+table.stats {
+  min-width: 250px;
+  margin: 10px auto;
+
+  tr th {
+    text-align: center;
+    text-transform: capitalize;
+    font-variant: small-caps;
+  }
+
+  tr td {
+    font-size: 14px;
+    text-align: center;
+  }
+
+  .player {
+    font-weight: bold;
+    color: yellow;
+    text-shadow: -1px 0 #878787, 0 1px #878787, 1px 0 #878787, 0 -1px #878787;
+  }
+
+  tr:nth-child(2n) {
+    background-color: rgba(41, 156, 148, 0.42);
+  }
+
+  tr:last-of-type td {
+    border-bottom: 1px solid #444;
+  }
+
+  // top 3 players
+  tr:nth-of-type(2) td {
+    font-size: 22px;
+    font-weight: bold;
+  }
+
+  tr:nth-of-type(3) td {
+    font-size: 18px;
+    font-weight: bold;
+  }
+
+  tr:nth-of-type(4) td {
+    font-size: 14px;
+    font-weight: bold;
+  }
+}
+
+.notifications {
+  position: absolute;
+  top: 110px;
+  right: 30px;
+  text-align: center;
+}
+
+.notifications .notify {
+  clear: both;
+}
+
+.notifications .notify .message {
+  display: block;
+  border-top: 6px solid #207973;
+  background: linear-gradient(to bottom, rgba(238, 238, 238, 0.9) 80%, rgba(0, 0, 0, 0));
+  padding: 10px 20px 20px;
+  margin: 4px 0 20px;
+  width: 15vw;
+  font-size: 14px;
+  text-align: center;
+  color: #555;
+  overflow: hidden;
+}
+
+.notifications .notify .short {
+  display: none;
+  float: right;
+  border: 1px solid #207973;
+  border-radius: 15px;
+  box-shadow: 0 0 2px #000;
+  height: 30px;
+  width: 30px;
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 30px;
+  padding: 0;
+  margin: 0 10px 0 0;
+  color: #207973;
+}
+
+@media (max-width: 1400px) {
+
+  section.content {
+    margin-left: 15px !important;
+  }
+
+  body {
+    background: url('../img/white-bg-texture.png') repeat !important;
+  }
+
+  .notifications {
+    right: 0;
+  }
+
+  .notifications .notify {
+    position: relative;
+    height: 48px;
+    overflow: visible;
+  }
+
+  .notifications .notify .message {
+    display: none;
+    position: absolute;
+    right: 0;
+    top: -12px;
+    padding: 10px 50px 20px 10px;
+  }
+
+  .notifications .notify .short {
+    display: block;
+  }
+
+  .notifications .notify:hover .message {
+    display: block;
+    width: 60vw;
+  }
+}
+
+#login-form {
+  width: 300px;
+  margin: 40px auto 0;
+  color: #444;
+}
+
+#login-form label {
+  display: block;
+  margin-top: 20px;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+#login-form input {
+  display: block;
+  width: 100%;
+  padding: 8px;
+  border: none;
+  border-left: 4px solid #207973;
+  outline: none;
+  background: #FFF;
+}
+
+#login-form input[readonly] {
+  color: #777;
+}
+
+#login-pass-tip {
+  width: 50%;
+  margin: 40px auto 0;
+  padding: 30px 0;
+  text-align: center;
+}
+
+#login-pass-tip img {
+  width: 60%;
+}
+
+.container-narrow {
+  margin: 0 auto;
+  max-width: 500px;
+}

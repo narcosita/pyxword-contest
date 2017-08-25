@@ -1,0 +1,69 @@
+{% extends "layout.html" %}
+{% block content %}
+    <div class="body-content">
+        <h2>{{ challenge.crossword.name }}</h2>
+        <h5>points: {{ challenge.crossword.score|int }}</h5>
+
+        {% if challenge.crossword.description %}
+        <div>
+            {{ markdown(challenge.crossword.description) }}
+        </div>
+        {% else %}
+        <div>
+            <p>There is only so much human can do.</p>
+            <p>Have you already checked out the simple REST-like API we use here?</p>
+            <p>
+                Under
+                <a href="{{ url_for('contest_api.Challenges', contest_slug=contest.slug) }}">
+                    {{ url_for('contest_api.Challenges', contest_slug=contest.slug) }}
+                </a>
+                you can checkout the available crosswords, like <a href="{{ url_for('contest_api.Challenge', contest_slug=contest.slug, pk=challenge.id) }}">
+                    the one
+                </a> that you are looking at right now.
+            </p>
+            <p>
+                When you figure out the solution you can try PUTing the crossword back where it came from with '*' replaced with the missing letters.
+            </p>
+            <p>
+                If you are wondering if you are doing something wrong then checkout the requests made by your browser.
+                The UI is using the same API to retrieve the crossword and submit your solution.
+            </p>
+        </div>
+        {% endif %}
+        <div class="clearfix">
+            <div class="pull-right">
+                <a href="{{ url_for('contest_api.Challenge', contest_slug=contest.slug, pk=challenge.id) }}" download>
+                    Download
+                </a>
+            </div>
+        </div>
+        <div id="messageBox"></div>
+        <div id="crossword" data-crossword-id="{{ pk }}">
+            Loading crossword...
+        </div>
+
+        {% if remaining_challenges %}
+        <h3>Try luck with other crosswords:</h3>
+        <ul>
+            {% for challenge in remaining_challenges %}
+            <li>
+                <a href="{{ url_for('contest.challenge', contest_slug=contest.slug, pk=challenge.id) }}">
+                    {{ challenge.crossword.name }}
+                </a>
+            </li>
+            {% endfor %}
+        </ul>
+        {% endif %}
+    </div>
+{% endblock %}
+
+{% block js %}
+<script type="application/javascript">
+    setupCrossword(
+        {{ url_for('contest_api.Challenge', contest_slug=contest.slug, pk=challenge.id)|tojson|safe }},
+        $('#crossword'),
+        $('#messageBox')
+    );
+</script>
+{% endblock %}
+
